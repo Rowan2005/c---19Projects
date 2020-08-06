@@ -13,7 +13,8 @@ var bg = "sprites/bg1.png";
 var score = 0;
 
 function preload() {
-    getBackgroundImg();
+   //getBackgroundImg();
+    bg1 = loadImage("sprites/bg1.png")
 }
 
 function setup(){
@@ -47,8 +48,8 @@ function setup(){
 }
 
 function draw(){
-    if(backgroundImg)
-        background(backgroundImg);
+    //if(backgroundImg)
+        background(bg1);
     
         noStroke();
         textSize(35)
